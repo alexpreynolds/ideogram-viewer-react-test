@@ -1,0 +1,83 @@
+#root {
+  height: calc(100vh);
+  width: calc(100vw);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 
+    ui-sans-serif, 
+    system-ui, 
+    -system-ui, 
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto, Helvetica, Arial, 
+    sans-serif, 
+    "Apple Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+  cursor: default;
+  user-select: none;
+  overscroll-behavior: contain;
+  touch-action: none !important;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  margin: 0px;
+  margin-top: 0px;
+  padding: 20px;
+  padding-top: 0px;
+  color: black;
+  background-color: rgb(242, 242, 242);
+}
+
+.box .row {}
+
+.box .row.header {
+  flex: 0 1 auto;
+  /* The above is shorthand for:
+  flex-grow: 0,
+  flex-shrink: 1,
+  flex-basis: auto
+  */
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.box .row.footer {
+  flex: 0 1 35px; /* total margin and padding of ".box .row.header" */
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.noGenesLabel {
+  font-size: smaller;
+  font-style: italic;
+}
+
+.geneLabelParent {}
+
+.geneLabel {
+  font-weight: bolder;
+}
+
+#_ideogramMiddleWrap {
+  height: 465px !important;
+}
